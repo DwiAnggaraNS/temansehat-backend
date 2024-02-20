@@ -1,7 +1,7 @@
 import json
 # import pymysql       
 
-with open(r'flaskapp\config.json') as config_file:
+with open('flaskapp/config.json') as config_file:
     config = json.load(config_file)
 
 class Config:

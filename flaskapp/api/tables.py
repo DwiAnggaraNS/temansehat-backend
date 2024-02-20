@@ -3,7 +3,7 @@ from itsdangerous import URLSafeTimedSerializer
 import base64
 import json
 import time
-with open(r'flaskapp\config.json') as config_file:
+with open('flaskapp/config.json') as config_file:
     config = json.load(config_file)
 
 db = SQLAlchemy()
