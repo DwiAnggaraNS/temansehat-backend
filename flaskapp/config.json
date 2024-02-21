@@ -1,7 +1,7 @@
 {
-    "SECRET_KEY" : "af27f08e56c0130d121623759c5576d18f0a79c0beda6d1d",
-    "JWT_SECRET_KEY" : "023f8741a7e927e2014fb511a6a97e4fbb55a7aa707c3564",
-    "DATABASE_USER_PASSWORD" : "timjametkudasi",
-    "MAIL_PASSWORD": "lbtucvtaewmhovbd"
+    "SECRET_KEY" : "",
+    "JWT_SECRET_KEY" : "",
+    "DATABASE_USER_PASSWORD" : "",
+    "MAIL_PASSWORD": ""
 
 }
