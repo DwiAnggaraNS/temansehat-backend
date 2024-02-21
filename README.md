@@ -75,7 +75,7 @@ python main.py
 
 The backend server will now be active.
 
-Feel free to reach out if you have any questions or encounter issues. Good luck with your TemanSehat project for the Google Solution Challenge!
+Feel free to reach out if you have any questions or encounter issues.
 
 ## 4. API Documentation
 
