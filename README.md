@@ -1,40 +1,81 @@
 # TemanSehat Backend RESTful API Documentation
 
 ## 1. Introduction
-This repository contains the backend for the TemanSehat Mobile App, developed for the Google Solution Challenge. TemanSehat is a community mental health app that aims to create a safe space for individuals to express their thoughts and feelings. Focused on attentive listening and positive support, the app encourages users to open up in a nurturing environment. Through sharing experiences, users can build meaningful connections and improve their mental well-being within the caring community of TemanSehat.
+
+Welcome to the documentation for the Backend RESTful API of the TemanSehat mobile app. This backend serves as the foundation for the TemanSehat mobile app, which is developed for the Google Solution Challenge. TemanSehat is a community mental health app designed to create a supportive space for individuals to express their thoughts and feelings openly. The app focuses on attentive listening, positive support, and providing a nurturing environment for users to build meaningful connections. To ensure a supportive and non-toxic community, the TemanSehat mobile app utilizes the Google Cloud Platform's REST API for Natural Language Processing (NLP) to assess sentiment in user comments.
+
+**Note**: TemanSehat mobile app is integrated with Google Cloud Platform's REST API Natural Language Processing (NLP) in the Mobile App Frontend for NLP to evaluate sentiment in each post comment, fostering a supportive and non-toxic community.
 
 ## 2. Getting the Backend Repository
-To obtain the backend folder from this GitHub repository, use the following command:
+
+To access the Backend RESTful API repository, follow these steps:
+
+- Clone the repository from GitHub:
+
+    ```bash
+    git clone https://github.com/your-username/teman-sehat-backend.git
+    ```
+
+## 3. Setting Up the Backend Server
+
+To activate the backend server, follow these steps:
+
+### 3.1. Install Dependencies
+
+Navigate to the project folder and install the required dependencies from the `requirements.txt` file:
 
 ```bash
-git clone <repository_url>
-cd <repository_folder>/backend
+cd teman-sehat-backend
+pip install -r requirements.txt
 ```
 
-## 3. Activating the Backend Server
-Follow these steps to activate the backend server:
+### 3.2. Create a Virtual Environment
 
-- Download dependencies from the `requirements.txt` file.
-  ```bash
-  pip install -r requirements.txt
-  ```
+Create a virtual environment to isolate dependencies:
 
-- Create a virtual environment.
-  ```bash
-  python -m venv venv
-  ```
+```bash
+python -m venv venv
+```
 
-- Create a `config.json` file in the same path as `config.py` and fill it with the following format:
-  ```json
-  {
-    "SECRET_KEY": "<your_secret_key>",
-    "JWT_SECRET_KEY": "<your_jwt_secret_key>",
-    "DATABASE_USER_PASSWORD": "<your_database_password>",
-    "MAIL_PASSWORD": "<your_mail_password>"
-  }
-  ```
+Activate the virtual environment:
 
-- Configure the `SQLALCHEMY_DATABASE_URI` section in the `config.py` file with your database URL.
+- **On Windows:**
+    ```bash
+    venv\Scripts\activate
+    ```
+- **On Unix or MacOS:**
+    ```bash
+    source venv/bin/activate
+    ```
+
+### 3.3. Configure `config.json`
+
+Create a `config.json` file in the same directory as `config.py` and fill it with the following format:
+
+```json
+{
+    "SECRET_KEY": "your_secret_key",
+    "JWT_SECRET_KEY": "your_jwt_secret_key",
+    "DATABASE_USER_PASSWORD": "your_database_password",
+    "MAIL_PASSWORD": "your_mail_password"
+}
+```
+
+### 3.4. Update `config.py`
+
+Configure the `SQLALCHEMY_DATABASE_URI` in the `config.py` file with your database URL.
+
+### 3.5. Run the Backend Server
+
+Execute the `main.py` file to start the backend server:
+
+```bash
+python main.py
+```
+
+The backend server will now be active.
+
+Feel free to reach out if you have any questions or encounter issues. Good luck with your TemanSehat project for the Google Solution Challenge!
 
 ## 4. API Documentation
 
